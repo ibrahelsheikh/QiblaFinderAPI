@@ -13,9 +13,7 @@ public class QiblaDirectionServiceImpl implements QiblaDirectionService {
     @Override
     public Double getAngleWithNorth(QiblaRequest request) {
 
-        AngleWithNorthEquation angleWithNorthEquation = new AngleWithNorthEquation();
-
-        return angleWithNorthEquation.calculateAngle(request.getLatitude(), request.getLongitude());
+        return AngleWithNorthEquation.calculateAngle(request.getLatitude(), request.getLongitude());
     }
 
 }

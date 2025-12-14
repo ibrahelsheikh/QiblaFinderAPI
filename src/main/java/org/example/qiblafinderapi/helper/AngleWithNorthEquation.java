@@ -6,7 +6,7 @@ public class AngleWithNorthEquation {
     private static final double KAABA_LAT = Math.toRadians(21.4225);
     private static final double KAABA_LON = Math.toRadians(39.8262);
 
-    public double calculateAngle(double latitude, double longitude) {
+    public static double calculateAngle(double latitude, double longitude) {
 
         double lat1 = Math.toRadians(latitude);
         double lon1 = Math.toRadians(longitude);
